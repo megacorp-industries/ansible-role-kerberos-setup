@@ -1,0 +1,10 @@
+- name: Install required packages
+  community.general.rpm_ostree_pkg:
+    name:
+      - krb5-server
+      - krb5-workstation
+  register: layersAdded
+
+- name: Reboot if required
+  reboot:
+  when: layersAdded.changed

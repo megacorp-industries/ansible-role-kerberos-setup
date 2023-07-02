@@ -1,0 +1,11 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: kerberos-setup
+  author: mi
+  description: To setup a kerberos server
+  company: "Megacorp Industries"
+  min_ansible_version: 2.4
+  galaxy_tags:
+    - server
